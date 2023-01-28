@@ -24,14 +24,15 @@ nav {
 }
 .lu-svg {
     width:18px;
+    margin: 10px;
 }
 .BBG {
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 40px;
-    width: 40%;
+    width: 50%;
 }
 .BBG:hover ,input:hover {
     background-color: #303134;
@@ -60,7 +61,6 @@ button {
 }
 button:hover {
     border: 1px solid white;
-    padding: 10px;
 }
 .google-idoma {
     color: #8ab4f8;
