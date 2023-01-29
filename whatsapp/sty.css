@@ -9,6 +9,7 @@
     --color-principal-items-svg-two:#697780;
     --color-lateral-buscador:#111B21;
     --color-hora:#00A884;
+    --color-mensaje-verda: #277C68;
     --color-secundario:#8696a0;
     --color-bara-ingreso-text: #2A3942;
     --color-hora-leida:#7A8A94;
@@ -32,6 +33,7 @@ p {
     width: 40%;
     min-width: var(--size-ancho-lateral-izquierda);
     max-width: var(--size-ancho-lateral-izquierda-max);
+    border-right: 1px solid #313D45;
 }
 .lateral-derecha {
     height: 100%;
@@ -99,6 +101,7 @@ p {
     /*enviado y ledio*/
     color:var(--color-hora-leida);
     font-size: 12px;
+    margin:0 6px 0 6px;
 }
 .ultimo-mensaje {
     font-size: 13px;
@@ -181,14 +184,14 @@ p {
     height: 50px;
     max-width: 80%;
     margin-bottom: 12px;
-    
+    display: flex;
+    align-items: center;
 }
 .forma-mensaje {
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(49, 97, 228, 0.173);
-    border-radius: 10px;
     height: 50px;
 }
 .mensaje-enviado {
@@ -199,4 +202,18 @@ p {
 .mensaje-resivido {
     width: 90%;
     display: flex;
+}
+.color-mensaje-enviado {
+    background-color: var(--color-mensaje-verda);
+    border-radius: 10px 0 10px 10px;
+}
+.dimenciones-mensajes {
+    height: 35px;
+    padding-right: 20px;
+    position: relative;
+    top: 9px;
+}
+.color-mensaje-resivido {
+    background-color: var(--color-principal);
+    border-radius: 0 10px 10px 10px;
 }
