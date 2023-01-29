@@ -1,0 +1,202 @@
+* {
+    --size-ancho-lateral-izquierda : 336px;
+    --size-ancho-lateral-izquierda-max : 390px;
+    --altura-personalizar:60px;
+    --altura-buscador:40px;
+    --lateral-personali: 10px; 
+    --color-principal-items: #d1d7db;
+    --color-principal: #202C33;
+    --color-principal-items-svg-two:#697780;
+    --color-lateral-buscador:#111B21;
+    --color-hora:#00A884;
+    --color-secundario:#8696a0;
+    --color-bara-ingreso-text: #2A3942;
+    --color-hora-leida:#7A8A94;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+p {
+    margin: 0;
+}
+.lateral-izquierda {
+    height: 100vh;
+    width: 40%;
+    min-width: var(--size-ancho-lateral-izquierda);
+    max-width: var(--size-ancho-lateral-izquierda-max);
+}
+.lateral-derecha {
+    height: 100%;
+    width: 80%;
+}
+.personalizacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-principal);
+    padding: var(--lateral-personali);
+}
+.buscador-organizador {
+    padding-left: var(--lateral-personali);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--altura-buscador);
+    background-color: var(--color-lateral-buscador);
+}
+.lista-contactos {
+    height: 83.3%;
+    background-color: var(--color-lateral-buscador);
+}
+.img-lateral {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    clip-path: circle(50%);
+}
+.color-svg {
+    color: var(--color-principal-items);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.items-buscador-svg {
+    margin-left: var(--lateral-personali);
+    margin-right: var(--lateral-personali);
+    color: var(--color-principal-items-svg-two);
+}
+.buscador-contact {
+    width: 100%;
+    border: none;
+    background-color: var(--color-principal);
+}
+.buscador-contact:hover {
+    border: none;
+}
+.barra-buscador {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    background-color: var(--color-principal);
+    border-radius: 10px;
+}
+.nombre-contacto {
+    font-size: 17px;
+    font: inherit;
+    color: var(--color-principal-items);
+}
+.hora {
+    /*enviado y no leido*/
+    /*color:var(--color-hora);
+    /*enviado y ledio*/
+    color:var(--color-hora-leida);
+    font-size: 12px;
+}
+.ultimo-mensaje {
+    font-size: 13px;
+    color: var(--color-secundario);
+} 
+.estado-mensaje {
+    color: var(--color-secundario);
+}
+.contacto {
+    background-color: var(--color-lateral-buscador);
+    max-height: 75px;
+    display: flex;
+    align-items: center;
+    
+}
+.item-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin:10px 0 10px; 
+    margin-left: 15px;
+    width: 90%;
+    border-bottom: 1px solid var(--color-principal);
+}
+.item-internos-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nombre-contacto-actual {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+.item-contacto-actual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/**/
+.contacto-actual{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: var(--color-principal);
+}
+.narador-mensajes {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    justify-content: space-between;
+    background-color: var(--color-principal);
+}
+.ingresar-mensaje {
+    min-width: 300px;
+    width: 90%;
+    padding: 6px 12px 6px 12px;
+    border-radius: 5px ;
+    background-color: var(--color-bara-ingreso-text);
+    border: 0;
+    color: var(--color-secundario);
+    display: flex;
+}
+.ingresar-mensaje:hover {
+    border: 0;
+}
+.view-chat {
+    background-image: url(./img/pattern.png);
+    background-color: #0B141A;
+    color: white;
+    height: 79vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-mensaje {
+    height: 50px;
+    max-width: 80%;
+    margin-bottom: 12px;
+    
+}
+.forma-mensaje {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(49, 97, 228, 0.173);
+    border-radius: 10px;
+    height: 50px;
+}
+.mensaje-enviado {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+.mensaje-resivido {
+    width: 90%;
+    display: flex;
+}
